@@ -1,7 +1,5 @@
 #ifndef HELPER_H
-
 #define HELPER_H
-
 #include <ctime>
 #include <string>
 #include <sstream>
@@ -23,8 +21,6 @@ namespace Helper // custom namespace to store our custom data types
 			time(&ms);
 
 			struct tm* info = localtime(&ms);
-
-			// format data from info
 
 			D = info->tm_mday;
 			m = info->tm_mon + 1; // need to add 1 since january is represented 0
@@ -64,16 +60,13 @@ namespace Helper // custom namespace to store our custom data types
 	};
 
 	template <class T>
-	
 	std::string ToString(const T &e) // only able types that supports the insertion operator
 	{
 		std::ostringstream s;
 		s << e;
 		return s.str();
 	}
-
-	// OPTIONAL FUNCTION FOR DEBUGGING PURPOSES
-
+	
 	void WriteAppLog(const std::string &s) // reference to const string we wish to log
 	{
 		std::ofstream file("AppLog.txt", std::ios::app); // app stands for append file
@@ -81,5 +74,4 @@ namespace Helper // custom namespace to store our custom data types
 		file.close();
 	}
 }
-
 #endif // HELPER_H

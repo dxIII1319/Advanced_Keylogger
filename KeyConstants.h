@@ -1,27 +1,26 @@
 #ifndef KEYCONSTANTS_H
 #define KEYCONSTANTS_H
-
 #include <map>
 #include <string>
+using namespace std;
 
 class KeyPair
 {
 	public:
-		KeyPair(const std::string &vk = "", const std::string &name = "") : VKName(vk), Name(name) {}
-
-		std::string VKName;
-		std::string Name;
+		string VKName;
+		string Name;
+		KeyPair(const string &vk = "", const string &name = "") : VKName(vk), Name(name) {}
 };
 
 class Keys // store map of keys we get from the system and translate them to human friendly values
 {
 	public:
-		static std::map<int, KeyPair> KEYS;
+		static map<int, KeyPair> KEYS;
 };
 
-std::map<int, KeyPair> Keys::KEYS = { // database of all keys, feel free to modify based on the targeted keyboard
-	{ 0xC1,{ "[VK_ABNT_C1]", "[Abnt C1]" } },
-	{ 0xC2,{ "[VK_ABNT_C2]", "[Abnt C2]" } },
+map<int, KeyPair> Keys::KEYS = { // database of all keys, depends on the targeted keyboard
+	{ 0xC1,{ "[VK_ABNT_C1]", "[Abnt C1]"}},
+	{ 0xC2,{ "[VK_ABNT_C2]", "[Abnt C2]"}},
 	{ 0x6B,{ "[VK_ADD]", "[Numpad +]" } },
 	{ 0xF6,{ "[VK_ATTN]", "[Attn]" } },
 	{ 0x08,{ "[VK_BACK]", "[Backspace]" } },
