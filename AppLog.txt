@@ -1,0 +1,32 @@
+[30.06.2023 19:53:55]
+Hook Started ... Timer started
+
+[30.06.2023 20:21:59]
+Hook Started ... Timer started
+
+[30.06.2023 20:25:15]
+Hook Started ... Timer started
+
+[30.06.2023 20:27:10]
+Hook Started ... Timer started
+
+[30.06.2023 20:29:10]
+File creation was not successfull. Keylog '[Space][OEM_COMMA (< ,)][E][S][Space][OEM_COMMA (< ,)][Space][OEM_COMMA (< ,)][Space][OEM_PERIOD (> .)][Space][W][I][N][D][O][W][S][Space][S][W][C][U][R][I][T][Y][A][N][T][I]'
+
+[30.06.2023 20:31:10]
+File creation was not successfull. Keylog '[Space][OEM_COMMA (< ,)][E][S][Space][OEM_COMMA (< ,)][Space][OEM_COMMA (< ,)][Space][OEM_PERIOD (> .)][Space][W][I][N][D][O][W][S][Space][S][W][C][U][R][I][T][Y][A][N][T][I][E][N][D][Space][T][H][E][Space][A][N][T][I][M][A][L][W][A][R][E][Space][W][I][N][D][O][W][S][Space][S]'
+
+[30.06.2023 20:33:10]
+File creation was not successfull. Keylog '[Space][OEM_COMMA (< ,)][E][S][Space][OEM_COMMA (< ,)][Space][OEM_COMMA (< ,)][Space][OEM_PERIOD (> .)][Space][W][I][N][D][O][W][S][Space][S][W][C][U][R][I][T][Y][A][N][T][I][E][N][D][Space][T][H][E][Space][A][N][T][I][M][A][L][W][A][R][E][Space][W][I][N][D][O][W][S][Space][S]'
+
+[30.06.2023 20:35:10]
+File creation was not successfull. Keylog '[Space][OEM_COMMA (< ,)][E][S][Space][OEM_COMMA (< ,)][Space][OEM_COMMA (< ,)][Space][OEM_PERIOD (> .)][Space][W][I][N][D][O][W][S][Space][S][W][C][U][R][I][T][Y][A][N][T][I][E][N][D][Space][T][H][E][Space][A][N][T][I][M][A][L][W][A][R][E][Space][W][I][N][D][O][W][S][Space][S][G][I][T][L][S][Enter]
+[C][D][Space][Caps Lock][/Caps Lock][D][Caps Lock][/Caps Lock][E][S][K][T][O][P][Enter]
+[L][S][Backspace][Backspace][C][D][Space][Caps Lock][/Caps Lock][A][Caps Lock][/Caps Lock][D][V][A][N][C][E][D][Tab][Enter]
+[L][S][Enter]
+[C][D][Space][Caps Lock][/Caps Lock][A][Tab][Enter]
+[L][S][Enter]
+[Caps Lock][/Caps Lock][G][I][T][Space][S][T][A][T][U][S][Enter]
+[G][I][T][Space][A][D][D][Space][OEM_PERIOD (> .)][Enter]
+[G][I][T][Space][C]'
+

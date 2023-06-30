@@ -2,6 +2,7 @@
 #define TIMER_H
 #include <chrono>
 #include <thread>
+#include<functional>
 
 class Timer
 {
@@ -41,9 +42,9 @@ class Timer
 
     public:
     static const long Infinite = -1L;
-    
-    Timer(const std::function<void(void)> &f) : funct (f) {}
 
+    Timer(const std::function<void(void)> &f) : funct (f) {}
+    Timer(){}
     Timer(const std::function<void(void)> &f, const unsigned long &i, const long repeat = Timer::Infinite) : funct (f), interval(std::chrono::milliseconds(i)), CallNumber(repeat) {}
 
     void Start(bool Async = true)
@@ -83,7 +84,7 @@ class Timer
 
     void SetFunction(const std::function<void(void)> &f)
     {
-        func = f;
+        funct = f;
     }
 
     long GetLeftCount() const {return repeat_count;}
