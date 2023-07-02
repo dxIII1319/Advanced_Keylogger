@@ -11,7 +11,7 @@ class Timer
     long CallNumber = -1L;
     long repeat_count = -1L;
     std::chrono::milliseconds interval = std::chrono::milliseconds(0);
-    std::function<void(void) > funct = nullptr; //pointer to a function
+    std::function<void(void) > funct = nullptr;
 
     void SleepAndRun()
     {

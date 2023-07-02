@@ -32,6 +32,6 @@ int main(int argc, char *argv[])
         return 5;
     }
     fo<<data;
-    std::cout<<"Decoding was successfull"<<std::endl;
+    std::cout<<"Decoding was successful"<<std::endl;
     return 0;
 }
